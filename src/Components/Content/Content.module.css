@@ -1,0 +1,11 @@
+.content {
+    width: 75vw;
+    height: 90vh;
+    position: flex;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    border: 1px solid #000000; 
+    border-radius: 15px;
+    font-family: "GothamPro";
+}

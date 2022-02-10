@@ -1,0 +1,13 @@
+.current-container {
+    max-width: 90vw;
+    width: 30vw;
+    height: 40vh;
+    position: flex;
+    margin-top: 10vh;
+    margin-left: 6vh;
+    background-color: #f3f3f3;
+    border-radius: 20px;
+    border: 1px solid #000000;
+    font-family: "GothamPro";
+    float: left;
+}

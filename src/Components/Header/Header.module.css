@@ -1,0 +1,37 @@
+.header {
+    max-width: 90vw;
+    width: 70vw;
+    height: 10vh;
+    position: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3vh;
+    background-color: #f3f3f3;
+    border-radius: 20px;
+    border: 1px solid #000000;
+    font-family: "GothamPro";
+}
+
+.logo{
+    padding-top: auto;
+    padding-left: 5vh;
+    font-size: 40px;
+    font-weight: bold;
+    color: #000000;
+    float: left;
+}
+
+.search-input {
+    width: 25vw;
+    font-size: 25px;
+    color: #000000;
+    padding: 9px 8px;
+    margin-top: 2.5vh;
+    margin-right: 2.5vh;
+    border: 1px solid #000000; 
+    border-radius: 7px;
+    background: url(../../pics/magnifying-glass.svg) no-repeat center right #fff;
+    background-size: 15% 70%;
+    outline: none;
+    float: right;
+}
