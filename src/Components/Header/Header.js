@@ -8,7 +8,7 @@ function Header() {
       <h1 className={classes.logo}>rega weather</h1>
       <input
         className={classes['search-input']}
-        placeholder="Введите населенный пункт"
+        placeholder="Город или район"
       />
     </header>
   );
