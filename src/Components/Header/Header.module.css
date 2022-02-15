@@ -22,10 +22,11 @@
     padding: 9px 8px;
     margin-top: 15px;
     margin-right: 350px;
-    border: 1px solid #000000; 
+    border: 1px solid #0000009a; 
     border-radius: 7px;
     background: url(../../pics/magnifying-glass.svg) no-repeat center right;
     background-size: 15% 70%;
     outline: none;
     float: right;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.41);
 }

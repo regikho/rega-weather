@@ -1,13 +1,18 @@
 import React from 'react';
 
 import CurrentContainer from '../CurrentContainer/CurrentContainer';
+import WeekContainer from '../WeekContainer/WeekContainer';
 import classes from './Content.module.css';
 
-function Content() {
+function Content(props) {
   return (
     <div className={classes.content}>
-        <CurrentContainer />
-        <h1>body</h1>
+        <CurrentContainer 
+          state={props.state}
+        />
+        {/* <WeekContainer 
+          state={props.state}
+        /> */}
     </div>
   );
 }

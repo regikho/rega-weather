@@ -1,0 +1,8 @@
+export const MILLISECONDS_IN_SECOND = 1000;
+
+export const API_KEY = '75a953a6d679a7a1428a3b2615929947';
+
+export const MOSCOW_LOCATION = {
+    LONGITUDE: 37.6155600,
+    LATITUDE: 55.7522200
+}

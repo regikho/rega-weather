@@ -1,3 +1,11 @@
-.weekContainer {
+.week-container {
+    width: 700px;
+    height: 350px;
+    margin-right: 0;
+    position: flex;
+    background-color: #fff;
+    border-radius: 20px;
+    border: 1px solid #000000;
     font-family: "GothamPro";
+    float: left;
 }
