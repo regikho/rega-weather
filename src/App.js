@@ -3,7 +3,7 @@ import './App.css';
 import Content from './Components/Content/Content';
 import Header from './Components/Header/Header';
 import { getWeekDay } from './common/utils';
-import { MILLISECONDS_IN_SECOND, API_KEY, MOSCOW_LOCATION } from './common/constants';
+import { MILLISECONDS_IN_SECOND, MOSCOW_LOCATION } from './common/constants';
 
 class App extends React.Component {
 
