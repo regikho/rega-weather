@@ -49,19 +49,6 @@ class App extends React.Component {
       }
       
     );
-
-    // fetch('https://api.openweathermap.org/data/2.5/forecast/daily?q=Sochi&lang=ru&units=metric&cnt=6&appid=75a953a6d679a7a1428a3b2615929947')
-    // .then(response => response.json())
-    // .then(weather => this.setState({
-    //   year: new Date(weather.dt * MILLISECONDS_IN_SECOND).getFullYear(),
-    //   // month: new Date(weather.dt * MILLISECONDS_IN_SECOND).getMonth(),
-    //   // day: new Date(weather.dt * MILLISECONDS_IN_SECOND).getDay(),
-    //   temp: Math.round(weather.main.temp),
-    //   description: weather.description,
-    //   humidity: weather.main.humidity,
-    //   wind: weather.wind.speed,
-    //   pressure: weather.main.pressure,
-    // }))
   }
 
   render() {
