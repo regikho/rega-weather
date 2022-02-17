@@ -6,9 +6,9 @@ import DayContainer from './DayContainer/DayContainer';
 function WeekContainer(props) {
   return (
     <div className={classes['week-container']}>
-      <DayContainer 
-        state={props.state}
-      />      
+      {props.daily.map((day) => (
+        <DayContainer day={day} />
+      ))} 
     </div>
   );
 }

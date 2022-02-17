@@ -9,8 +9,8 @@ function Header(props) {
       <input
         className={classes['search-input']}
         placeholder="Город или район"
-        // value={props.location}
-        // onChange={props.onInputChange}
+        value={props.inputValue}
+        onChange={props.onInputChange}
       />
     </header>
   );

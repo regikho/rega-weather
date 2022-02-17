@@ -8,11 +8,16 @@ function Content(props) {
   return (
     <div className={classes.content}>
         <CurrentContainer 
-          state={props.state}
+          weekDay={props.weekDay}
+          date={props.date}
+          location={props.location}
+          temp={props.temp}
+          description={props.description}
+          humidity={props.humidity}
+          wind={props.wind}
+          pressure={props.pressure}
         />
-        {/* <WeekContainer 
-          state={props.state}
-        /> */}
+        <WeekContainer daily={props.daily} />
     </div>
   );
 }

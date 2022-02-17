@@ -1,0 +1,16 @@
+.day-container {
+    width: 115px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.41);
+    background-color: #fff;
+}
+
+.day-container :hover {
+    border: 0px;
+    box-shadow: none;
+}
+
+.temp {
+    font-weight: bold;
+    color: #000000;
+}

@@ -1,11 +1,9 @@
 .content {
     width: 1210px;
-    height: 800px;
-    position: flex;
-    justify-content: space-around;
+    height: 600px;
     margin: 50px 350px;
-    background-color: #f3f3f3;
-    border: 1px solid #000000; 
+    padding-top: 70px;
+    background-color: #f3f3f3; 
     border-radius: 10px;
     font-family: "GothamPro";
 }
