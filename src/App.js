@@ -13,6 +13,7 @@ class App extends React.Component {
     date: null,
     location: null,
     temp: null,
+    feelsLike: null,
     description: null,
     humidity: null,
     wind: null,
@@ -20,7 +21,9 @@ class App extends React.Component {
     inputValue: '',
     timer: null,
     daily: [],
-    icon: ''
+    icon: '',
+    lon: null,
+    lat: null
   }
 
   handleInputChange = ({ target: { value }}) => {
@@ -29,6 +32,14 @@ class App extends React.Component {
     const timer = setTimeout(() => {
       getWeather({ q: value }).then(weather => {
         this.setState(prepareWeather(weather));
+
+        getWeekWeather({
+          lon: weather.coord.lon,
+          lat: weather.coord.lat
+        }).then(forecast => {
+          this.setState({ daily: prepareWeekWeather(forecast.daily) });
+        });
+  
       });
     }, 500)
 
@@ -39,6 +50,13 @@ class App extends React.Component {
   }
   
   componentDidMount() {
+    getWeekWeather({
+        lon: this.state.lon,
+        lat: this.state.lat
+      }).then(forecast => {
+        this.setState({ daily: prepareWeekWeather(forecast.daily) });
+      });
+
     navigator.geolocation.getCurrentPosition(
       (position) => {
         getWeather({
@@ -66,7 +84,7 @@ class App extends React.Component {
   }
 
   render() {
-    console.log(this.state.daily)
+    console.log(this.state)
     return (
       <div className="app">
         <Header
@@ -79,6 +97,7 @@ class App extends React.Component {
           date={this.state.date}
           location={this.state.location}
           temp={this.state.temp}
+          feelsLike={this.state.feelsLike}
           description={this.state.description}
           humidity={this.state.humidity}
           wind={this.state.wind}

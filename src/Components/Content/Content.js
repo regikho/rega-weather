@@ -12,6 +12,7 @@ function Content(props) {
           date={props.date}
           location={props.location}
           temp={props.temp}
+          feelsLike={props.feelsLike}
           description={props.description}
           humidity={props.humidity}
           wind={props.wind}

@@ -8,7 +8,25 @@
     float: left;
     text-align: left;
     padding-left: 25px;
-    
+}
+
+.temp-description {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.icon-description {
+    margin-right: 20px;
+}
+
+.description {
+    margin: 7px 0;
+}
+
+.img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
 }
 
 .temp {
@@ -16,8 +34,13 @@
     font-size: 40px;
     font-weight: bold;
     color: #000000;
+    margin: 0;
 }
 
 .location {
     font-weight: bold;
+}
+
+.hr {
+    margin-right: 25px;
 }

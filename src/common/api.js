@@ -1,4 +1,4 @@
-import { MILLISECONDS_IN_SECOND, API_KEY } from './constants';
+import { API_KEY } from './constants';
 
 export const customFetch = (url, params) => {
     const stringParams = [];
