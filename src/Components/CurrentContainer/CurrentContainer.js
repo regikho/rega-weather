@@ -8,6 +8,7 @@ function CurrentContainer(props) {
       <p className={classes.date}>{props.weekDay}, {props.date}</p>
       <p className={classes.location}>{props.location}</p>
       <p className={classes.temp}>{props.temp}&#176;С</p>
+      <img src={props.icon} />
       <p>{props.description}</p>
       <p>Влажность: {props.humidity}%</p>
       <p>Скорость ветра: {props.wind} м/с</p>

@@ -16,6 +16,7 @@ export function prepareWeather(weather) {
         humidity: weather.main.humidity,
         wind: weather.wind.speed,
         pressure: weather.main.pressure,
+        icon: `https://openweathermap.org/img/wn/${weather.weather[0]['icon']}.png`
     }
 }
 
@@ -28,5 +29,6 @@ export function prepareWeekWeather(daily) {
              humidity: day.humidity,
              wind: day.wind_speed,
              pressure: day.pressure,
+             icon: `https://openweathermap.org/img/wn/${day.weather[0]['icon']}.png`
            }))
 }

@@ -19,7 +19,8 @@ class App extends React.Component {
     pressure: null,
     inputValue: '',
     timer: null,
-    daily: []
+    daily: [],
+    icon: ''
   }
 
   handleInputChange = ({ target: { value }}) => {
@@ -83,6 +84,7 @@ class App extends React.Component {
           wind={this.state.wind}
           pressure={this.state.pressure}
           daily={this.state.daily}
+          icon={this.state.icon}
         />        
       </div>
     );

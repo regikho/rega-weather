@@ -16,6 +16,7 @@ function Content(props) {
           humidity={props.humidity}
           wind={props.wind}
           pressure={props.pressure}
+          icon={props.icon}
         />
         <WeekContainer daily={props.daily} />
     </div>
