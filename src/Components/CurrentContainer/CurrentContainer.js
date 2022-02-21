@@ -5,10 +5,9 @@ import classes from './CurrentContainer.module.css';
 function CurrentContainer(props) {
   return (
     <div className={classes['current-container']}>
-      <p className={classes.date}>{props.weekDay}, {props.date}</p>
-      
       <div className={classes['temp-description']}>
         <div>
+          <p className={classes.date}>{props.weekDay}, {props.date}</p>
           <p className={classes.location}>{props.location}</p>
           <p className={classes.temp}>{props.temp}&#176;С</p>
           <p>Ощущение: {props.feelsLike}&#176;С</p>
@@ -18,11 +17,13 @@ function CurrentContainer(props) {
           <p className={classes.description}>{props.description}</p>
         </div>
       </div>
+      
       <hr className={classes.hr}></hr>
-  
-      <p>Влажность: {props.humidity}%</p>
-      <p>Скорость ветра: {props.wind} м/с</p>
-      <p>Давление: {props.pressure} мм рт. ст.</p>
+      <div className={classes['data-description']}>
+        <p>Влажность: {props.humidity}%</p>
+        <p>Скорость ветра: {props.wind} м/с</p>
+        <p>Давление: {props.pressure} мм рт. ст.</p>
+      </div>
     </div>
   );
 }
