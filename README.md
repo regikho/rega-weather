@@ -2,4 +2,4 @@
 
 ## Скриншот проекта
 
-![screenshot](https://https://raw.githubusercontent.com/regikho/regikho.github.io/main/rega-weather/rega-weather.PNG)
+![screenshot](https://github.com/regikho/regikho.github.io/blob/main/rega-weather/rega-weather.PNG?raw=true)
